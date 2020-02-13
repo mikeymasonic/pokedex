@@ -12,14 +12,8 @@ export default class Body extends Component {
 
         async componentDidMount() {
             const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex`);
-            // console.log(data.body.results);
-            this.setState({ data: data.body.results })
-            
+            this.setState({ data: data.body.results })         
         }
-
-        
-    
-//   state = { selected: null };
 
   render() {
     console.log(this.state.selected);
@@ -55,24 +49,12 @@ export default class Body extends Component {
               {pokeAPIData.map(poke => <option key={poke._id}>{poke.hp}</option>)};
             </select>
 
-            {/* <select className="poke-horn-filter" onChange={handleChange}>
-              <option value="" defaultValue>
-                # of Horns
-              </option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3 </option>
-              <option value="100">100</option>
-            </select> */}
-            
             <select className="poke-speed-filter" onChange={handleChange}>
               <option value="" defaultValue>
                 Speed
               </option>
               {pokeAPIData.map(poke => <option key={poke._id}>{poke.speed}</option>)};
-            </select>
-
-            
+            </select>  
           </section>
 
           <section className="list-section">

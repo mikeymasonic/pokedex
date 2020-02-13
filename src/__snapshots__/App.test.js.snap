@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders App.js correctly 1`] = `
+<div
+  className="App"
+>
+  <div>
+    <header>
+      <img
+        alt="Pokemon"
+        className="logo"
+        src="https://i.ebayimg.com/images/g/8bMAAOSwxp9W-TVs/s-l400.jpg"
+      />
+      <h1>
+        Pokedex
+      </h1>
+      <form>
+        <label
+          for="search"
+        >
+          Search: 
+        </label>
+        <input
+          id="search"
+          name="search"
+          type="text"
+        />
+        <input
+          id="submit"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </header>
+  </div>
+  <div>
+    <main>
+      <section
+        className="options"
+      >
+        <select
+          className="poke-name-filter"
+          onChange={[Function]}
+        >
+          <option
+            defaultValue={true}
+            value=""
+          >
+            Pokemon
+          </option>
+          ;
+        </select>
+        <select
+          className="poke-hp-filter"
+          onChange={[Function]}
+        >
+          <option
+            defaultValue={true}
+            value=""
+          >
+            HP
+          </option>
+          ;
+        </select>
+        <select
+          className="poke-speed-filter"
+          onChange={[Function]}
+        >
+          <option
+            defaultValue={true}
+            value=""
+          >
+            Speed
+          </option>
+          ;
+        </select>
+      </section>
+      <section
+        className="list-section"
+      >
+        <ul
+          className="pokes"
+        />
+      </section>
+    </main>
+  </div>
+  <div>
+    <span
+      id="copyright"
+    >
+      © 2020 - Poke Nerds LLC
+    </span>
+  </div>
+</div>
+`;

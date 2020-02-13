@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PokeList.js correctly 1`] = `
+<li>
+  <div
+    className="info-container"
+  >
+    <h2 />
+    <p
+      className="poke-hp"
+    >
+      <b>
+        HP:
+      </b>
+       
+       / 
+      <b>
+        XP:
+      </b>
+       
+    </p>
+  </div>
+  <div
+    className="image-container"
+  >
+    <img />
+  </div>
+  <p
+    className="attributes-class"
+  >
+    <span
+      id="type"
+      style={
+        Object {
+          "backgroundColor": undefined,
+        }
+      }
+    >
+      <b>
+        Type: 
+      </b>
+       
+    </span>
+    <br />
+    <b>
+      Attack:
+    </b>
+     
+     /
+    <b>
+       Defense:
+    </b>
+     
+    <br />
+    <b>
+       Special Attack:
+    </b>
+     
+     /
+    <b>
+       Special Defense:
+    </b>
+     
+    <br />
+    <b>
+       Speed:
+    </b>
+     
+    <br />
+    <b>
+       Height:
+    </b>
+     
+    " /
+    <b>
+       Weight:
+    </b>
+     
+    kgs
+  </p>
+</li>
+`;

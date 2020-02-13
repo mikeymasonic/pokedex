@@ -4,13 +4,21 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-            {/* <img src={this.props.logoText} /> */}
         <header>
-          <img className="logo" src="http://www.placekitten.com/100/100" alt="Pokemon" />
+          <img className="logo" src="https://i.ebayimg.com/images/g/8bMAAOSwxp9W-TVs/s-l400.jpg" alt="Pokemon" />
           <h1>Pokedex</h1>
-        </header>
         
-      </div>
+       
+
+          <form>
+              <label for="search">Search: </label>
+              <input type="text" id="search" name="search" />
+              <input type="submit" id="submit" value="Submit" />
+          </form>
+          </header>
+
+      </div>   
+
     );
   }
 }
