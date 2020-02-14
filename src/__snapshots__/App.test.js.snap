@@ -6,75 +6,40 @@ exports[`renders App.js correctly 1`] = `
 >
   <div>
     <header>
-      <img
-        alt="Pokemon"
-        className="logo"
-        src="https://i.ebayimg.com/images/g/8bMAAOSwxp9W-TVs/s-l400.jpg"
-      />
+      <a
+        href="./"
+      >
+        <img
+          alt="Pokemon"
+          className="logo"
+          src="https://i.ebayimg.com/images/g/8bMAAOSwxp9W-TVs/s-l400.jpg"
+        />
+      </a>
       <h1>
         Pokedex
       </h1>
-      <form>
-        <label
-          for="search"
+      <div
+        id="search"
+      >
+        <form
+          onSubmit={[Function]}
         >
-          Search: 
-        </label>
-        <input
-          id="search"
-          name="search"
-          type="text"
-        />
-        <input
-          id="submit"
-          type="submit"
-          value="Submit"
-        />
-      </form>
+          <input
+            id="search"
+            onChange={[Function]}
+            value=""
+          />
+          <button
+            id="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
     </header>
   </div>
   <div>
     <main>
-      <section
-        className="options"
-      >
-        <select
-          className="poke-name-filter"
-          onChange={[Function]}
-        >
-          <option
-            defaultValue={true}
-            value=""
-          >
-            Pokemon
-          </option>
-          ;
-        </select>
-        <select
-          className="poke-hp-filter"
-          onChange={[Function]}
-        >
-          <option
-            defaultValue={true}
-            value=""
-          >
-            HP
-          </option>
-          ;
-        </select>
-        <select
-          className="poke-speed-filter"
-          onChange={[Function]}
-        >
-          <option
-            defaultValue={true}
-            value=""
-          >
-            Speed
-          </option>
-          ;
-        </select>
-      </section>
       <section
         className="list-section"
       >
@@ -83,6 +48,30 @@ exports[`renders App.js correctly 1`] = `
         />
       </section>
     </main>
+  </div>
+  <div
+    className="paging"
+  >
+    <button
+      disabled={true}
+      id="paging-button"
+      onClick={[Function]}
+    >
+       LAST 
+    </button>
+    <button
+      disabled={false}
+      id="paging-button"
+      onClick={[Function]}
+    >
+       NEXT 
+    </button>
+    <h5>
+      Page 
+      1
+      /
+      41
+    </h5>
   </div>
   <div>
     <span

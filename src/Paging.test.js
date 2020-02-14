@@ -1,10 +1,9 @@
 import React from 'react';
-import PokeItem from './PokeItem.js';
+import Paging from './Header';
 import renderer from "react-test-renderer";
-
-test('renders PokeItem.js correctly', () => {
+test('renders Paging.js correctly', () => {
   const tree = renderer
-  .create(<PokeItem data={[]}/>)
+  .create(<Paging />)
   .toJSON();
   expect(tree).toMatchSnapshot();
 });

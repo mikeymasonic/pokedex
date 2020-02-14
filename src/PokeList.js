@@ -13,6 +13,7 @@ export default class PokeList extends Component {
                     alt={this.props.poke.url_image}
                     src={this.props.poke.url_image} />
             </div>
+            
             <p className="attributes-class">
                 <span id="type" style={{ backgroundColor: this.props.poke.color_1}}><b>Type: {this.props.poke.type_1}</b> </span><br></br>
                 <b>Attack:</b> {this.props.poke.attack} / 
