@@ -1,21 +1,30 @@
 import React, { Component } from "react";
 import PokeList from "./PokeList.js";
 // import pokeData from "./data.js";
-import request from 'superagent';
+// import request from 'superagent';
 
-export default class Body extends Component {
+export default class PokeItem extends Component {
 
-    state = {
-        data: [],
-        selected: null,
-        };
+    // state = {
+    //     data: [],
+    //     selected: null,
+    //     };
 
-        async componentDidMount() {
-            const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex`);
-            this.setState({ data: data.body.results })         
-        }
+        // async componentDidMount() {
+        //     const data = await request.get(`https://alchemy-pokedex.herokuapp.com/api/pokedex`);
+        //     this.setState({ data: data.body.results })         
+        // }
+  
 
   render() {
+
+    const pokemon = this.props.pokemon;
+    let poster = pokemon.url_image;
+    if (poster === "N/A") {
+      poster = "assets/placeholder.png";
+    }
+
+
     console.log(this.state.selected);
     const pokeAPIData = this.state.data
     const pokeNodes = pokeAPIData

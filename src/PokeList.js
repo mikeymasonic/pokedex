@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import PokeItem from "./PokeItem.js";
 
 export default class PokeList extends Component {
     render() {
+
+    const { pokemon } = this.props;
+    const pokeListItems = pokemon.map(pokemon => <PokeItem pokemon={pokemon} />);
+
         return <li>
+            <ul className="pokemon">{pokeListItems}</ul>;
             <div className="info-container">
                 <h2>{this.props.poke.pokemon}</h2>
                 <p className="poke-hp"><b>HP:</b> {this.props.poke.hp} / <b>XP:</b> {this.props.poke.base_experience}</p>
