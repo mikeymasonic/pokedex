@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Header.js correctly 1`] = `
+exports[`renders Paging.js correctly 1`] = `
 <div>
   <header>
     <a

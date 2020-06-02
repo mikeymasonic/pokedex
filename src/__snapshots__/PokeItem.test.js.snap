@@ -4,46 +4,6 @@ exports[`renders PokeItem.js correctly 1`] = `
 <div>
   <main>
     <section
-      className="options"
-    >
-      <select
-        className="poke-name-filter"
-        onChange={[Function]}
-      >
-        <option
-          defaultValue={true}
-          value=""
-        >
-          Pokemon
-        </option>
-        ;
-      </select>
-      <select
-        className="poke-hp-filter"
-        onChange={[Function]}
-      >
-        <option
-          defaultValue={true}
-          value=""
-        >
-          HP
-        </option>
-        ;
-      </select>
-      <select
-        className="poke-speed-filter"
-        onChange={[Function]}
-      >
-        <option
-          defaultValue={true}
-          value=""
-        >
-          Speed
-        </option>
-        ;
-      </select>
-    </section>
-    <section
       className="list-section"
     >
       <ul

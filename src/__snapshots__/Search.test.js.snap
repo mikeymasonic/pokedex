@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Search.js correctly 1`] = `
+<div
+  id="search"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      id="search"
+      onChange={[Function]}
+      value=""
+    />
+    <button
+      id="submit"
+    >
+      Search
+    </button>
+  </form>
+</div>
+`;
