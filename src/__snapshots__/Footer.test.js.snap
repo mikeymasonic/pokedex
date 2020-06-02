@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Footer.js correctly 1`] = `
+<div>
+  <span
+    id="copyright"
+  >
+    © 2020 - Poke Nerds LLC
+  </span>
+</div>
+`;

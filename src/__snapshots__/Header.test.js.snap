@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Header.js correctly 1`] = `
+<div>
+  <header>
+    <img
+      alt="Pokemon"
+      className="logo"
+      src="https://i.ebayimg.com/images/g/8bMAAOSwxp9W-TVs/s-l400.jpg"
+    />
+    <h1>
+      Pokedex
+    </h1>
+    <form>
+      <label
+        for="search"
+      >
+        Search: 
+      </label>
+      <input
+        id="search"
+        name="search"
+        type="text"
+      />
+      <input
+        id="submit"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </header>
+</div>
+`;

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo|Oswald');
+
+body {
+    font-family: 'Heebo', "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    background: rgb(33, 75, 71);
+    margin: 0;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1, h2 {
+    font-family: 'Oswald';
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header, main {
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    border-bottom: 1px dotted black;
+}
+
+h1 {
+    margin: 0 20px;
+    flex-grow: 1;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+section {
+    margin: 20px auto;
+    width: 90%;
+    min-width: 650px;
+}
+
+
+.pokes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.pokes li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 540px;
+    width: 350px;
+    min-width: 200px;
+    border: 2px dotted #aaa;
+    background-color: rgb(181, 215, 215);
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.pokes li h2 {
+    font-size: 1.5em;
+}
+
+.pokes li .poke-horn {
+    font-size: .8em;
+    color: #555;
+}
+
+.pokes li .year {
+    font-size: .8em;
+}
+
+.image-container {
+    height: 50%;
+}
+
+.image-container img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.poke-horn-filter {
+    height: 40px;
+    width: 150px;
+    font-size: 1em;
+}
+
+.poke-name-filter {
+  height: 40px;
+  width: 150px;
+  font-size: 1em;
+}
+
+.poke-speed-filter {
+    height: 40px;
+    font-size: 1em;
+  }
+
+
+.poke-hp-filter {
+    height: 40px;
+    width: 140px;
+    font-size: 1em;
+  }
+
+.logo {
+  width: 10%;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.attributes-class {
+  text-align: left;
+}
+
+#type {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+#search {
+  height: 30px;
+}
+
+#submit {
+  padding: 1px;
+  margin: 5px;
+  border: 1px dotted black;
+  height: 30px;
+  width: 100px;  
+  
+}
